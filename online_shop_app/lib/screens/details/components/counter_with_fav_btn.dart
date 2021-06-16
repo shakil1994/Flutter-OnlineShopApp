@@ -11,7 +11,7 @@ class CounterWithFavBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: <Widget>[
+      children: [
         CartCounter(),
         Container(
           padding: EdgeInsets.all(8),

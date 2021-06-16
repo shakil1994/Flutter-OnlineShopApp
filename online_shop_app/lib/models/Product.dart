@@ -4,6 +4,7 @@ class Product {
   final String image, title, description;
   final int price, size, id;
   final Color color;
+
   Product({
     required this.id,
     required this.image,

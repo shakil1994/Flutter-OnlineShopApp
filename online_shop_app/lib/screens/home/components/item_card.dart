@@ -5,6 +5,7 @@ import 'package:online_shop_app/models/Product.dart';
 class ItemCard extends StatelessWidget {
   final Product product;
   final Function() press;
+
   const ItemCard({
     Key? key,
     required this.product,
@@ -17,7 +18,7 @@ class ItemCard extends StatelessWidget {
       onTap: press,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: [
           Expanded(
             child: Container(
               padding: EdgeInsets.all(kDefaultPadding),

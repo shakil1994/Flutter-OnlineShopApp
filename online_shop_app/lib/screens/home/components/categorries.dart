@@ -8,9 +8,18 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  List<String> categories = ["Hand bag", "Jewellery", "Footwear", "Dresses", "Cloths", "Cap"];
+  List<String> categories = [
+    "Hand bag",
+    "Jewellery",
+    "Footwear",
+    "Dresses",
+    "Cloths",
+    "Cap"
+  ];
+
   // By default our first item will be selected
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -37,7 +46,7 @@ class _CategoriesState extends State<Categories> {
         padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: [
             Text(
               categories[index],
               style: TextStyle(

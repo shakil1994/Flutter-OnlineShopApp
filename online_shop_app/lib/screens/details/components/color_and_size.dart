@@ -13,14 +13,14 @@ class ColorAndSize extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: <Widget>[
+      children: [
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+            children: [
               Text("Color"),
               Row(
-                children: <Widget>[
+                children: [
                   ColorDot(
                     color: Color(0xFF356C95),
                     isSelected: true,
@@ -57,6 +57,7 @@ class ColorAndSize extends StatelessWidget {
 class ColorDot extends StatelessWidget {
   final Color color;
   final bool isSelected;
+
   const ColorDot({
     Key? key,
     required this.color,

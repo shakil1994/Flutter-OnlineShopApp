@@ -16,7 +16,7 @@ class AddToCart extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: kDefaultPadding),
       child: Row(
-        children: <Widget>[
+        children: [
           Container(
             margin: EdgeInsets.only(right: kDefaultPadding),
             height: 50,

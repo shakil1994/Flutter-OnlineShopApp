@@ -16,7 +16,7 @@ class ProductTitleWithImage extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
+        children: [
           Text(
             "Aristocratic Hand Bag",
             style: TextStyle(color: Colors.white),
@@ -30,7 +30,7 @@ class ProductTitleWithImage extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding),
           Row(
-            children: <Widget>[
+            children: [
               RichText(
                 text: TextSpan(
                   children: [

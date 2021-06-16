@@ -11,7 +11,7 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
+      children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
           child: Text(
@@ -35,15 +35,15 @@ class Body extends StatelessWidget {
                   childAspectRatio: 0.75,
                 ),
                 itemBuilder: (context, index) => ItemCard(
-                  product: products[index],
-                  press: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => DetailsScreen(
-                          product: products[index],
-                        ),
-                      )),
-                )),
+                      product: products[index],
+                      press: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DetailsScreen(
+                              product: products[index],
+                            ),
+                          )),
+                    )),
           ),
         ),
       ],
