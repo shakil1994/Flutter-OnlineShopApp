@@ -1,10 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:online_shop_app/constants.dart';
 import 'package:online_shop_app/models/Product.dart';
 import 'package:online_shop_app/screens/details/details_screen.dart';
-import 'package:online_shop_app/screens/home/components/categorries.dart';
-import 'package:online_shop_app/screens/home/components/item_card.dart';
+
+import 'categorries.dart';
+import 'item_card.dart';
 
 class Body extends StatelessWidget {
   @override

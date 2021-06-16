@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:online_shop_app/constants.dart';
 import 'package:online_shop_app/models/Product.dart';
 import 'package:online_shop_app/screens/details/components/body.dart';
@@ -8,7 +8,6 @@ class DetailsScreen extends StatelessWidget {
   final Product product;
 
   const DetailsScreen({Key? key, required this.product}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +29,7 @@ class DetailsScreen extends StatelessWidget {
         ),
         onPressed: () => Navigator.pop(context),
       ),
-      actions: [
+      actions: <Widget>[
         IconButton(
           icon: SvgPicture.asset("assets/icons/search.svg"),
           onPressed: () {},

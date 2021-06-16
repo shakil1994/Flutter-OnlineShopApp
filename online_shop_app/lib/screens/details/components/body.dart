@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:online_shop_app/constants.dart';
 import 'package:online_shop_app/models/Product.dart';
-import 'package:online_shop_app/screens/details/components/add_to_cart.dart';
-import 'package:online_shop_app/screens/details/components/color_and_size.dart';
-import 'package:online_shop_app/screens/details/components/counter_with_fav_btn.dart';
-import 'package:online_shop_app/screens/details/components/description.dart';
-import 'package:online_shop_app/screens/details/components/product_title_with_image.dart';
+
+import 'add_to_cart.dart';
+import 'color_and_size.dart';
+import 'counter_with_fav_btn.dart';
+import 'description.dart';
+import 'product_title_with_image.dart';
 
 class Body extends StatelessWidget {
   final Product product;
